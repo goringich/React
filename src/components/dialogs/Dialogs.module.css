@@ -1,0 +1,123 @@
+.dialogs{
+  display: flex;
+}
+
+.Dialogs{
+  height: auto;
+}
+
+.btn{
+  border-radius: 3px;
+  float: right;
+  padding: 7px 110px 7px 30px;
+  padding-right: 30px !important;
+  background-color: #0cb658;
+  font-size: 30px;
+  color: #fff;
+
+  margin-top: 5px;
+  border: 0;
+  margin-right: 1%;
+}
+
+.btn:hover, .btn:focus{
+  outline: none;
+}
+
+.right{
+  width: 100%;
+}
+
+.messages{
+  padding-left: 70px;
+  overflow-y: scroll;
+  max-height: 350px;
+} 
+
+.title{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.person{
+  overflow-y: scroll;
+  max-height: 70vh;
+  margin-bottom: 0px;
+  width: 50%;
+}
+
+.person::-webkit-scrollbar-track,
+.messages::-webkit-scrollbar-track{
+  box-shadow: 10px 5px 5px -5px rgba(160, 138, 138, 0.2) inset;
+  -webkit-box-shadow: 10px 5px 5px -5px rgba(160, 138, 138, 0.2) inset;
+  border-radius: 10px;
+}
+
+.person::-webkit-scrollbar,
+.messages::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+.messages::-webkit-scrollbar-thumb,
+.person::-webkit-scrollbar-thumb {
+  background-color: #62e76d;
+  box-shadow: 10px 5px 5px -5px rgba(160, 138, 138, 0.2) inset;
+  -webkit-box-shadow: 10px 5px 5px -5px rgba(160, 138, 138, 0.2) inset;
+  border-radius: 10px;
+}
+
+.peoples{
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+.Dialog_dialogs__1W0K_{
+  border-right: 1px solid #8c9aad;
+}
+
+textarea {
+  margin: 0px 0px 3px 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: calc(99% - 30px);
+  background-color: #e6eeea;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px 20px 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+  resize : none;
+
+  font-size: 30px;
+}
+  
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border: 0;
+}
+
+textarea[type="text"]::-moz-placeholder {
+  color: #c1c9cf;
+}
+textarea[type="text"]::-webkit-textarea-placeholder {
+  color: #c1c9cf;
+}
+textarea[type="text"]:-ms-textarea-placeholder {
+  color: #c1c9cf;
+}
+textarea[type="text"]::-ms-textarea-placeholder {
+  color: #c1c9cf;
+}
+textarea[type="text"]::placeholder {
+  color: #c1c9cf;
+}
+
+button{
+  padding-right: 30px;
+  font-size: 25px;
+  margin-top: 0px;
+}

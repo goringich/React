@@ -1,0 +1,69 @@
+.posts {
+  margin-left: 10px;
+  font-size: 35px;
+  word-spacing: 1px;
+}
+
+.posts__title {
+  margin-bottom: 30px;
+}
+
+.posts textarea {
+  box-sizing: border-box;
+  width: 99%;
+  background-color: #e6eeea;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px 20px 40px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+  margin-left: 0px;
+  resize : none;
+
+  font-size: 27px;
+}
+
+.posts textarea:hover,
+.posts textarea:focus {
+  outline: none;
+  border: 0;
+}
+
+.posts textarea[type="text"]::-moz-placeholder {
+  color: #c1c9cf;
+}
+.posts textarea[type="text"]::-webkit-textarea-placeholder {
+  color: #c1c9cf;
+}
+.posts textarea[type="text"]:-ms-textarea-placeholder {
+  color: #c1c9cf;
+}
+.posts textarea[type="text"]::-ms-textarea-placeholder {
+  color: #c1c9cf;
+}
+.posts textarea[type="text"]::placeholder {
+  color: #c1c9cf;
+}
+
+.posts textarea:read-only {
+  padding: 20px 20px 40px;
+
+  font-size: 30px;
+  color: #c1c9cf;
+}
+
+.btn{
+  border-radius: 3px;
+  float: right;
+  padding: 7px 110px 7px 30px;
+  background-color: #0cb658;
+  font-size: 30px;
+  color: #fff;
+
+  margin-top: px;
+  border: 0;
+  margin-right: 1%;
+}
+
+.btn:hover, .btn:focus{
+  outline: none;
+}

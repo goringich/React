@@ -1,0 +1,65 @@
+.message{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+a, NavLink{
+    text-decoration: none;
+}
+
+
+.message:first-child{
+    margin-top: 10px;
+}
+
+.person{
+    text-align: center;
+}
+
+.name{
+    color: #8c9aad;
+    max-width: 100px;
+}
+
+.person img{
+    width: 100px;
+    display: block;
+}
+
+.text{
+    overflow-wrap: break-word;
+    height: auto;
+    width: 300px;
+    margin-left: 50px;
+    border: 2px solid #8c9aad;
+    color:#8c9aad;
+    border-radius: 15px;
+    padding: 25px 35px 20px;
+    line-height: 1.6; 
+
+    position: relative;
+}
+
+.text:before, .text:after{
+    display: block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #8c9aad;
+
+    position: absolute;
+    left: -44px;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.text:before{
+    top: 70px;
+    transform: rotate(45deg);
+}
+
+.text:after{
+    top: 36px;
+    transform: translateY(-45px);
+    transform: rotate(-45deg);
+}

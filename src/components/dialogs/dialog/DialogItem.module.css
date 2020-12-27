@@ -1,0 +1,30 @@
+.people b{
+    color: #8c9aad;
+    position: relative;
+}
+
+.people img{
+    width: 70px;
+    height: 70px;
+    
+    position: absolute;
+    bottom: -22px;
+    left: -80px;
+}
+
+.people{
+    list-style: none;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+.people a b{
+    text-decoration: none;
+}
+
+.people a.active__link{
+    color: gold;
+}

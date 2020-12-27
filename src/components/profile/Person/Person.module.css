@@ -1,0 +1,22 @@
+.person {
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.person img {
+  width: 200px;
+  height: 100%;
+}
+
+.person__info {
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+.person__name {
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 45px;
+}
+

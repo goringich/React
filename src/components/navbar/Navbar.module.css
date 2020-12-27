@@ -1,0 +1,35 @@
+nav {
+  display: block;
+  grid-area: nav;
+  background-color: #13ce66;
+  word-spacing: 1.5;
+  line-height: 40px;
+  padding: 30px;
+  padding-top: 15px;
+  padding-right: 50px;
+}
+
+.item a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+
+  transition: 0.1s linear;
+}
+
+.item a:hover {
+  color: #c9db26;
+}
+
+.last{
+  margin: 70px 0px;
+}
+
+.last1{
+  margin: 70px 0px 0px;
+}
+
+.item a.active__link{
+  text-decoration: underline;
+}
+
