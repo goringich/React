@@ -5,8 +5,8 @@ const MyPosts = (props) => {
   let newPostElement = React.createRef()
 
   let sendPost = () => {
-    let text = newPostElement.current.value
-    props.addPost(text)
+    let postMessage = newPostElement.current.value
+    props.addPost(postMessage)
     newPostElement.current.value = ""
   }
 

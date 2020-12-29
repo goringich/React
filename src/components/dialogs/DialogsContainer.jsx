@@ -11,7 +11,8 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return{
         addSMS: (text) => {
-            dispatch(sendSMSActionCreator(text))
+            let action = sendSMSActionCreator(text)
+            dispatch(action)
         }
     }
 }

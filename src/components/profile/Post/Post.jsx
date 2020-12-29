@@ -7,11 +7,11 @@ const Post = (props) => {
       {props.message}
       <div className={s.statistics}>
         <div className={s.likes}>
-          <i class="fas fa-heart"></i>
+          <i className="fas fa-heart"></i>
           <div className={s.count}>{props.likesCount}</div>
         </div>
         <div className={s.repost}>
-          <i class="fas fa-share"></i>
+          <i className="fas fa-share"></i>
           <div className={s.count}>{props.repostCount}</div>
         </div>
       </div>

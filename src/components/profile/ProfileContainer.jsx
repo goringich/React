@@ -1,6 +1,5 @@
 import { connect } from "react-redux"
 import Profile from "./Profile"
-import Post from "./Post/Post"
 
 let mapStateToProps = (state) => {
     return{
@@ -8,6 +7,5 @@ let mapStateToProps = (state) => {
     }
 }
 
-let arrayPosts = mapStateToProps().postStatistics.map( p => <Post message={p.message} likesCount={p.likesCount} repostCount={p.repostCount} img={p.img} />)
-const Posts = connect(mapStateToProps, arrayPosts)(Profile)
+const Posts = connect(mapStateToProps)(Profile)
 export default Posts

@@ -5,16 +5,15 @@ import DialogItem from "./dialog/DialogItem"
 import Message from "./messages/Message"
 
 const Dialogs = (props) => {
-    let MessageElements = props.dialogsPage.sms.map( m => <Message id={m.id} message={m.message} name={m.name} photo={m.photo} />)
-    let DialogsElements = props.dialogsPage.dialogs.map( d => <DialogItem id={d.id} name={d.name} photo={d.photo} />)
+    let MessageElements = props.dialogsPage.sms.map( m => <Message id={m.id} key={m.id} message={m.message} name={m.name} photo={m.photo} />)
+    let DialogsElements = props.dialogsPage.dialogs.map( d => <DialogItem id={d.id} key={d.id} name={d.name} photo={d.photo} />)
 
     let newSMSElement = React.createRef()
-
     let sendSMS = () => {
         let text = newSMSElement.current.value
         props.addSMS(text)
         newSMSElement.current.value = ""
-    }    
+    }
 
     return(
         <BrowserRouter className={s.Dialogs}>

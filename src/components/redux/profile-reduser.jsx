@@ -27,25 +27,27 @@ let initialState = {
 }
 
 const profileReduser = (state = initialState, action) => {
-    let _addPost = (postMessage) => {
+    let _addPost = (text) => {
         let newPost = {
             id: 5,
-            message: postMessage,
+            message: text,
             likesCount: 0,
             repostCount: 0,
             img: "https://avatarko.ru/img/kartinka/2/Gubka_Bob.jpg"
         }
-        let copyState = {...state}
-        copyState.postStatistics = [...state.postStatistics]
-        copyState.postStatistics.push(newPost)
+        debugger
+        return {
+            ...state,
+            postStatistics: [...state.postStatistics, newPost]
+        }
     }
 
     if (action.type === ADD_POST){
-        _addPost(action.postMessage)
+        _addPost(action.text)
     }
 
-    return state
+    return { ...state }
 }
 
-export const sendPostActionCreator = (text) => ({type: ADD_POST, postMessage: text})
+export const sendPostActionCreator = (postMessage) => ({type: ADD_POST, text: postMessage})
 export default profileReduser

@@ -1,3 +1,4 @@
+// import React from "react"
 const ADD_SMS = "ADD-SMS"
 
 let initialState = {
@@ -23,17 +24,7 @@ let initialState = {
             photo: "https://lumpics.ru/wp-content/uploads/2017/11/Programmyi-dlya-sozdaniya-avatarok.png"
         },
         {
-            id: 3,
-            name: "Kirill Kim",
-            photo: "https://shutniki.club/wp-content/uploads/2019/12/v1-babay29.png"
-        },
-        {
             id: 5,
-            name: "Gubanov Ivan",
-            photo: "https://i.pinimg.com/originals/9c/77/46/9c7746225873e02d83b9315501b8dd2f.jpg"
-        },
-        {
-            id: 3,
             name: "Kirill Kim",
             photo: "https://shutniki.club/wp-content/uploads/2019/12/v1-babay29.png"
         },
@@ -43,12 +34,12 @@ let initialState = {
             photo: "https://i.pinimg.com/originals/9c/77/46/9c7746225873e02d83b9315501b8dd2f.jpg"
         },
         {
-            id: 3,
+            id: 7,
             name: "Kirill Kim",
             photo: "https://shutniki.club/wp-content/uploads/2019/12/v1-babay29.png"
         },
         {
-            id: 7,
+            id: 8,
             name: "Gubanov Ivan",
             photo: "https://i.pinimg.com/originals/9c/77/46/9c7746225873e02d83b9315501b8dd2f.jpg"
         }
@@ -82,15 +73,18 @@ let initialState = {
 }
 
 const dialogsReduser = (state = initialState, action) => {
-    let _addSMS = (SMS) =>{
+    debugger
+    let _addSMS = (SMS) => {
         let newSMS = {
             name: "Igor Kim",
-            id: 6,
+            id: 5,
             message: SMS,
             photo: "https://i.pinimg.com/originals/9c/77/46/9c7746225873e02d83b9315501b8dd2f.jpg"
         }
-        let copyState = {...state}
-        copyState.sms.push(newSMS)
+        return {
+            ...state,
+            sms: [...state.sms, newSMS]
+        }
     }
     if (action.type === ADD_SMS){
         _addSMS(action.SMS)
@@ -98,6 +92,6 @@ const dialogsReduser = (state = initialState, action) => {
     return state
 }
 
-export const sendSMSActionCreator = (body) => ({type: ADD_SMS, SMS: body})
+export const sendSMSActionCreator = (text) => ({type: ADD_SMS, SMS: text})
 
 export default dialogsReduser

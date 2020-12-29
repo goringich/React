@@ -10,6 +10,10 @@
   margin-top: 80px !important;
 }
 
+.post__item:last-child{
+  margin-bottom: 50px;
+}
+
 .statistics{
   display: flex;
 }
