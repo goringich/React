@@ -1,4 +1,3 @@
-// import React from "react"
 const ADD_SMS = "ADD-SMS"
 
 let initialState = {
@@ -89,9 +88,8 @@ const dialogsReduser = (state = initialState, action) => {
     if (action.type === ADD_SMS){
         _addSMS(action.SMS)
     }
-    return state
+    return {...state}
 }
 
 export const sendSMSActionCreator = (text) => ({type: ADD_SMS, SMS: text})
-
 export default dialogsReduser

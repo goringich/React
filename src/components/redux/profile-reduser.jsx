@@ -35,7 +35,6 @@ const profileReduser = (state = initialState, action) => {
             repostCount: 0,
             img: "https://avatarko.ru/img/kartinka/2/Gubka_Bob.jpg"
         }
-        debugger
         return {
             ...state,
             postStatistics: [...state.postStatistics, newPost]
@@ -45,8 +44,7 @@ const profileReduser = (state = initialState, action) => {
     if (action.type === ADD_POST){
         _addPost(action.text)
     }
-
-    return { ...state }
+    return {...state}
 }
 
 export const sendPostActionCreator = (postMessage) => ({type: ADD_POST, text: postMessage})

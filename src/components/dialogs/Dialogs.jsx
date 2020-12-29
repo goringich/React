@@ -10,7 +10,8 @@ const Dialogs = (props) => {
 
     let newSMSElement = React.createRef()
     let sendSMS = () => {
-        let text = newSMSElement.current.value
+        // let text = newSMSElement.current.value
+        let text = "lol"
         props.addSMS(text)
         newSMSElement.current.value = ""
     }
