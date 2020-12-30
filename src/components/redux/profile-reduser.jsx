@@ -42,7 +42,7 @@ const profileReduser = (state = initialState, action) => {
     }
 
     if (action.type === ADD_POST){
-        _addPost(action.text)
+        return _addPost(action.text)
     }
     return {...state}
 }

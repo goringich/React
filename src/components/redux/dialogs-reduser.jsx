@@ -86,9 +86,9 @@ const dialogsReduser = (state = initialState, action) => {
         }
     }
     if (action.type === ADD_SMS){
-        _addSMS(action.SMS)
+        return _addSMS(action.SMS)
     }
-    return {...state}
+    return {...state, _addSMS}
 }
 
 export const sendSMSActionCreator = (text) => ({type: ADD_SMS, SMS: text})

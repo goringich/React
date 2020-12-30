@@ -1,0 +1,78 @@
+.title{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.people{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.left{
+    max-width: 120px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.left button{
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    background-color: #0cb658;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+}
+
+.left button:hover, .left button:focus{
+    outline: none;
+}
+
+.right{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    border: 2px solid #9eadc2;
+    border-radius: 15px;
+    padding: 10px 10px;
+    color: #8c9aad;
+
+    position: relative;
+}
+
+.where{
+    margin-left: auto;
+    direction: rtl;
+}
+
+.name, .country, .city{
+    font-weight: 500;
+}
+
+.country{
+    margin-bottom: 10px;
+}
+
+.name{
+    margin-bottom: 40px;
+}
+
+.status{
+    font-size: 17px;
+}
+
+.left img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.more2{
+    transform: translate(30%, 0);
+    overflow: hidden;
+    font-size: 30px;
+    color: #8c9aad;
+    margin-top: 30px;
+}

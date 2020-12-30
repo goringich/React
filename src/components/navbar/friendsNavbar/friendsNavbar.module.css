@@ -16,20 +16,15 @@
     color: #c9db26;
 }
 
-.item{
+.inner{
     display: flex;
 }
 
-.inner__item{
-    justify-content: center;
-    flex: 1 1 0;
-}
-
-.inner__item{
+.item{
     margin: 0px 10px 0px 0px;
 }
 
-.inner__item img{
+.item img{
     border: 1px solid rgb(19, 63, 19);
     display: block;
     border-radius: 50%;

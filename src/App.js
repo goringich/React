@@ -1,23 +1,22 @@
 import './App.css'
 import Header from "./components/header/Header"
-import Navbar from "./components/navbar/Navbar"
-// import Profile from "./components/profile/Profile"
+import NavbarContainer from "./components/navbar/NavbarContainer"
 import DialogsContainer from "./components/dialogs/DialogsContainer"
-import News from "./components/news/News"
+import UsersContainer from "./components/users/UsersContainer"
 import Music from "./components/music/Music"
-import {Route} from "react-router-dom"
 import Posts from './components/profile/ProfileContainer'
+import {Route} from "react-router-dom"
 
 function App() {
   return (
       <div className="app-wrapper">
         <Header/>
         <main>
-          <Navbar/>
+          <NavbarContainer/>
           <div className="app-wrapper-content">
             <Route path="/profile" render={() => <Posts/>}/>
             <Route path="/dialogs" render={() => <DialogsContainer/>}/>
-            <Route path="/news" render={() => <News />}/>
+            <Route path="/users" render={() => <UsersContainer />}/>
             <Route path="/music" render={() => <Music />}/>
           </div>
         </main>
