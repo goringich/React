@@ -1,5 +1,5 @@
 import s from "./People.module.css"
-
+debugger
 const People = (props) => {
     if (props.users.length === 0){
         props.setUsers([
@@ -38,12 +38,10 @@ const People = (props) => {
             <div className={s.left}>
                 <img src={props.img} alt={props.id}/>
                 {
-                    props.users.map( p => 
-                        {p.followed
-                            ? <button onClick={() => { props.follow(p.id) }}>follow</button>
-                            : <button onClick={() => { props.unfollow(p.id) }}>unfollow</button>
-                        } 
-                     )
+                    props.users.map( p => p.followed
+                        ? <button onClick={() => props.follow(p.id)}>follow</button>
+                        : <button onClick={() => props.unfollow(p.id)}>unfollow</button>
+                    )
                 }
             </div>
             <div className={s.right}>
